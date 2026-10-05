@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background-color: #EEF5F8;
+    font-family: "Nimbus Sans L", "Nimbus Sans", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 957px;
+    background-color: #FFFFFF;
+    border: 1px solid #004D40;
+    border-radius: 32px;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 41.7%;
+    box-sizing: border-box;
+    padding: 50px 36px 48px 50px;
+    background-color: #004D40;
+    border-radius: 32px 0 0 32px;
+    color: #FFFFFF;
+}
+
+.left-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.brand-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.care-badge {
+    background-color: #5EEAD4;
+    color: #004D40;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+.brand-sub {
+    font-size: 12px;
+    color: #A7D3CB;
+}
+
+.hero-title {
+    margin: 28px 0 0 0;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.hero-text {
+    margin: 30px 0 0 0;
+    font-size: 15px;
+    line-height: 22px;
+    color: #D3E6E2;
+}
+
+.progress-box {
+    margin-top: 32px;
+    padding: 20px 21px;
+    background-color: #00453A;
+    border: 1px solid #136257;
+    border-radius: 20px;
+}
+
+.progress-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #5EEAD4;
+}
+
+.progress-updated {
+    font-size: 12px;
+    color: #B8D8D2;
+}
+
+.progress-line {
+    height: 1px;
+    margin: 16px 0;
+    background-color: #1C6459;
+}
+
+.steps-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #136257;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle.done {
+    background-color: #2DD4BF;
+    border-color: #1C8F82;
+}
+
+.circle.current {
+    background-color: #0B5A4E;
+    border-color: #5EEAD4;
+}
+
+.circle.upcoming {
+    background-color: #0B5A4E;
+}
+
+.current-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #5EEAD4;
+}
+
+.connector {
+    width: 17%;
+    height: 2px;
+    background-color: #1C6459;
+}
+
+.connector.done {
+    background-color: #2DD4BF;
+}
+
+.labels-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.label {
+    font-size: 11px;
+    color: #D3E6E2;
+}
+
+.label-active {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.label-dim {
+    color: #7FB0A7;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #0B5A4E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #D3E6E2;
+}
+
+.secure-note {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid #136257;
+    border-radius: 8px;
+    background-color: #00473B;
+    font-size: 14px;
+    color: #B8D8D2;
+    width: fit-content;
+}
