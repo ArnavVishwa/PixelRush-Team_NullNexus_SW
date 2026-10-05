@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmWait Alerts</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Inter, sans-serif;
+        }
+
+        body {
+            background: #eef4f5;
+            padding: 15px;
+        }
+
+        .dashboard {
+            max-width: 1400px;
+            margin: auto;
+            background: white;
+            border: 1px solid #d9e3e5;
+        }
+
+        .navbar {
+            background: #0f5d54;
+            color: white;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .logo-box {
+            width: 28px;
+            height: 28px;
+            background: #198a78;
+            border-radius: 6px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-size: 13px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #20313b;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #dbe6e7;
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .alert-card {
+            border-left: 6px solid #ef4444;
+            background: #fff7f7;
+        }
+
+        .alert-card h3 {
+            color: #b91c1c;
+            margin-bottom: 10px;
+        }
+
+        .alert-btn {
+            background: #ef4444;
+            border: none;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+
+        .success-card {
+            background: #effcf5;
+            border-left: 6px solid #22c55e;
+        }
+
+        .info-card {
+            background: #f8fafc;
+        }
+
+        .timeline {
+            border: 1px solid #dbe6e7;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .timeline ul {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        .timeline li {
+            margin-bottom: 12px;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .token-card {
+            background: #0f5d54;
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .token-card h2 {
+            font-size: 48px;
+        }
+
+        .token-status {
+            background: #156f64;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        .side-card {
+            background: white;
+            border: 1px solid #dbe6e7;
+            border-radius: 12px;
+            padding: 15px;
+        }
+
+        .channel {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .help {
+            text-align: center;
+        }
+
+        .help button {
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #0f5d54;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .illustration {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .illustration img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+        }
+
+        .footer {
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        @media(max-width:900px) {
+
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+            }
+
+        }
+
+        .navbar {
+            background: linear-gradient(135deg,
+                    #0b4f46,
+                    #11695e);
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+            margin-bottom: 20px;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: #1ca08c;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+        }
+
+        .logo-text h2 {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 2px;
+        }
+
+        .logo-text p {
+            color: #cfe9e4;
+            font-size: 12px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 12px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255, 255, 255, .12);
+        }
+
+        .nav-menu .active {
+            background: white;
+            color: #0b4f46;
+            font-weight: 600;
+        }
+
+        @media(max-width:900px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="navbar">
+
+            <div class="logo">
+                <div class="logo-box"></div>
+                <div>
+                    <strong>CalmWait</strong><br>
+                    <small>CityCare Clinic</small>
+                </div>
+            </div>
+
+            <div class="nav-links">
+                <a href="#">Check-ins</a>
+                <a href="#">Live Queue</a>
+                <a href="#">Why Delay</a>
+                <a href="#">Step Out</a>
+                <a href="#">Alerts</a>
+                <a href="#">Progress</a>
+                <a href="#">Emergency</a>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <div class="header">
+                <h1>Alerts</h1>
+                <p>Prioritize what needs attention.</p>
+            </div>
+
+            <div class="layout">
+
+                <div class="left-column">
+
+                    <div class="card alert-card">
+                        <h3>Return now</h3>
+                        <p>Your token has been called within 10 minutes.</p>
+                        <button class="alert-btn">Begin return process</button>
+                    </div>
+
+                    <div class="card success-card">
+                        <h3>All set next.</h3>
+                        <p>Nothing has changed.</p>
+                    </div>
+
+                    <div class="card info-card">
+                        <h3>Dr. Mehta is back and available</h3>
+                        <p>Queue resumed for consultation.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>You're getting closer - 3 people ahead</h3>
+                        <p>Please remain nearby.</p>
+                    </div>
+
+                    <div class="timeline">
+                        <h3>Timeline of recent activity</h3>
+                        <ul>
+                            <li>Doctor break finished</li>
+                            <li>Queue delay resolved</li>
+                            <li>Patient checked in</li>
+                            <li>Appointment confirmed</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="right-column">
+
+                    <div class="token-card">
+                        <h2>A-24</h2>
+                        <p>Dr. Mehta • Room 4</p>
+
+                        <div class="token-status">
+                            Your turn expected soon
+                        </div>
+                    </div>
+
+                    <div class="side-card">
+                        <h3>Delivery Channels</h3>
+
+                        <div class="channel">
+                            <span>SMS Alert</span>
+                            <span>Active</span>
+                        </div>
+
+                        <div class="channel">
+                            <span>Push Alert</span>
+                            <span>Active</span>
+                        </div>
+
+                        <div class="channel">
+                            <span>Email</span>
+                            <span>Active</span>
+                        </div>
+
+                    </div>
+
+                    <div class="side-card help">
+                        <h3>Need Help?</h3>
+                        <p>Contact support team.</p>
+                        <button>Call Support</button>
+                    </div>
+
+                    <div class="side-card illustration">
+                        <img src="girl.png" alt="Support Illustration">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            CalmWait • Patient Flow Analytics
+        </div>
+
+    </div>
+
+</body>
+
+</html>
