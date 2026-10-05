@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalmWait - Sign up</title>
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/nimbus-sans-l">
-    <!-- <link rel="stylesheet" href="sign-up.css"> -->
+    <link rel="stylesheet" href="sign-up.css">
 </head>
-
 <body>
     <main class="card">
 
+        <!-- LEFT PANEL -->
         <section class="left-panel">
             <div class="left-top">
                 <div class="brand">
@@ -26,8 +25,7 @@
                 </div>
 
                 <h1 class="hero-title">Your care journey starts here.</h1>
-                <p class="hero-text">Create your CalmWait account and stay informed about your visit with honest,
-                    transparent timing.</p>
+                <p class="hero-text">Create your CalmWait account and stay informed about your visit with honest, transparent timing.</p>
 
                 <div class="progress-box">
                     <div class="progress-header">
@@ -35,17 +33,14 @@
                         <span class="progress-updated">Updated just now</span>
                     </div>
                     <div class="progress-line"></div>
-                    <div class="steps-row">
+                                    <div class="steps-row">
                         <div class="circle done"><img src="images/checkmark.svg" alt="" width="12" height="9"></div>
                         <div class="connector done"></div>
                         <div class="circle done"><img src="images/checkmark.svg" alt="" width="12" height="9"></div>
                         <div class="connector done"></div>
-                        <div class="circle current">
-                            <div class="current-dot"></div>
-                        </div>
+                        <div class="circle current"><div class="current-dot"></div></div>
                         <div class="connector"></div>
-                        <div class="circle upcoming"><img src="images/consultation.svg" alt="" width="14" height="12">
-                        </div>
+                        <div class="circle upcoming"><img src="images/consultation.svg" alt="" width="14" height="12"></div>
                     </div>
                     <div class="labels-row">
                         <span class="label">Check-in</span>
@@ -77,7 +72,77 @@
             </div>
         </section>
 
+        <!-- RIGHT PANEL -->
+        <section class="right-panel">
+            <div class="top-row">
+                <span class="time-pill"><span class="pill-dot"></span>Under 60 seconds</span>
+                <span class="step-text">Step 1 of 1</span>
+            </div>
+
+            <h2 class="form-title">Welcome Back !</h2>
+            <p class="form-subtitle">Set up your CalmWait account to manage your visits and step out with peace of mind.</p>
+
+            <div class="field">
+                <label class="field-label" for="name">FULL NAME</label>
+                <div class="input-box">
+                    <img src="images/user.svg" alt="" width="14" height="17">
+                    <input class="input" type="text" id="name" value="Eleanor Vance">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="appointment">APPOINTMENT ID / MOBILE</label>
+                <div class="input-box">
+                    <img src="images/id.svg" alt="" width="20" height="20">
+                    <input class="input" type="text" id="appointment" value="CW-8924-CLINIC">
+                </div>
+            </div>
+
+            <div class="strength">
+                <div class="bars">
+                    <div class="bar bar-dark"></div>
+                    <div class="bar bar-dark"></div>
+                    <div class="bar bar-teal"></div>
+                    <div class="bar bar-empty"></div>
+                </div>
+                <div class="strength-text">
+                    <span class="strength-good"><span class="pill-dot"></span>Strength: Good</span>
+                    <span class="strength-hint">8+ chars, 1 number &amp; 1 symbol</span>
+                </div>
+            </div>
+
+            <div class="terms">
+                <input class="checkbox" type="checkbox" checked>
+                <span class="terms-text">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>, including SMS notifications for queue status.</span>
+            </div>
+
+            <button class="main-button">
+                Welcome
+                <img src="images/arrow.svg" alt="" width="14" height="11">
+            </button>
+
+            <div class="qr-area">
+                <div class="qr-box"></div>
+                <p class="qr-text">Scan with your phone to instantly link hospital queue pass</p>
+            </div>
+
+            <div class="or-row">
+                <div class="or-line"></div>
+                <span class="or-text">OR</span>
+                <div class="or-line"></div>
+            </div>
+
+            <button class="google-button">
+                <img src="images/google.svg" alt="" width="16" height="16">
+                Continue with Google
+            </button>
+
+            <div class="signin-row">
+                <span>Already have an account?</span>
+                <a class="signin-link" href="#">Sign in &gt;</a>
+            </div>
+        </section>
+
     </main>
 </body>
-
 </html>

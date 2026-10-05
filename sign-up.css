@@ -236,3 +236,249 @@ body {
     color: #B8D8D2;
     width: fit-content;
 }
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    width: 58.3%;
+    box-sizing: border-box;
+    padding: 56px 56px 48px 56px;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-pill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 12px;
+    background-color: #E6FAF6;
+    border: 1px solid #A7EDE2;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #004D40;
+}
+
+.pill-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #0F9F8E;
+}
+
+.step-text {
+    font-size: 12px;
+    color: #64748B;
+}
+
+.form-title {
+    margin: 20px 0 0 0;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #0B1530;
+}
+
+.form-subtitle {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    line-height: 22px;
+    color: #475569;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 24px;
+}
+
+.field-label {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1E2A47;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    height: 50px;
+    padding: 0 16px;
+    background-color: #EEF5F9;
+    border: 1px solid #C5D3E0;
+    border-radius: 10px;
+}
+
+.input {
+    flex-grow: 1;
+    border: none;
+    background-color: #EEF5F9;
+    font-family: inherit;
+    font-size: 16px;
+    color: #0B1530;
+}
+
+.strength {
+    margin-top: 24px;
+}
+
+.bars {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.bar {
+    width: 25%;
+    height: 5px;
+    border-radius: 3px;
+}
+
+.bar-dark { background-color: #004D40; }
+.bar-teal { background-color: #2DD4BF; }
+.bar-empty { background-color: #DDE5EC; }
+
+.strength-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #64748B;
+}
+
+.strength-good {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    color: #004D40;
+}
+
+.terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #004D40;
+}
+
+.terms-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #475569;
+}
+
+.terms-text a {
+    color: #004D40;
+}
+
+.main-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 56px;
+    margin-top: 20px;
+    background-color: #004D40;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 6px 12px #B7D3CE;
+}
+
+.qr-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.qr-box {
+    width: 132px;
+    height: 132px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDE5EC;
+    border-radius: 14px;
+}
+
+.qr-text {
+    margin: 0;
+    font-size: 14px;
+    color: #64748B;
+    text-align: center;
+}
+
+.or-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.or-line {
+    width: 50%;
+    height: 1px;
+    background-color: #DDE5EC;
+}
+
+.or-text {
+    font-size: 12px;
+    color: #64748B;
+}
+
+.google-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #C5D3E0;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #1E2A47;
+}
+
+.signin-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid #E8EEF3;
+    font-size: 14px;
+    color: #1E2A47;
+}
+
+.signin-link {
+    font-weight: bold;
+    color: #004D40;
+}
