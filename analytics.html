@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalmWait - Patient Flow Analytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="analytics.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <div class="logo-box">+</div>
+                <span class="logo-name">CalmWait</span>
+            </div>
+            <div class="clinic-info">
+                <span class="clinic-name">CityCare Clinic</span>
+                <span class="clinic-sub">General Medicine • Room-4</span>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="#" class="nav-link">Check-in</a>
+            <a href="#" class="nav-link">Live Queue</a>
+            <a href="#" class="nav-link">Why Delay</a>
+            <a href="#" class="nav-link">Step Out</a>
+            <a href="#" class="nav-link">Alerts</a>
+            <a href="#" class="nav-link">Progress</a>
+            <a href="#" class="nav-link nav-active">Analytics</a>
+            <a href="#" class="emergency-button">Emergency</a>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- ===== TOP: intro + suggestion (left), 4 stat cards (right) ===== -->
+        <section class="top">
+
+            <div class="top-left">
+                <div class="heart-pill">
+                    <!-- PASTE IMAGE HERE: heart icon -->
+                    <span class="icon">❤️</span>
+                    <span>Every minute saved here is a minute a patient is not worrying.</span>
+                </div>
+
+                <h1 class="title">Where time is lost</h1>
+                <p class="subtitle">Insights first, charts second.</p>
+
+                <div class="suggestion">
+                    <p class="suggestion-text">
+                        <b>Tue 11-12: average wait 42 min.</b>
+                        <span class="suggestion-normal">Cause: unbooked walk-ins.</span>
+                        <b>Suggestion: hold 2 walk-in slots.</b>
+                    </p>
+                    <a href="#" class="apply-button">Apply suggestion</a>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Waiting</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Stepped out</span>
+                    </div>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <span class="stat-number">42m</span>
+                        <span class="stat-label">Peak wait</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">No-shows</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== MIDDLE: heatmap + donut ===== -->
+        <section class="charts">
+
+            <div class="heat-card">
+                <span class="small-title">Wait by hour and doctor</span>
+
+                <div class="hours-row">
+                    <span class="hours-space"></span>
+                    <span class="hour">9</span>
+                    <span class="hour">10</span>
+                    <span class="hour">11</span>
+                    <span class="hour">12</span>
+                    <span class="hour">1</span>
+                    <span class="hour">2</span>
+                </div>
+
+                <div class="heat-rows">
+                    <div class="heat-row">
+                        <span class="doctor-name">Mehta</span>
+                        <div class="cell mid"></div>
+                        <div class="cell dark"></div>
+                        <div class="cell darkest"></div>
+                        <div class="cell dark"></div>
+                        <div class="cell mid"></div>
+                        <div class="cell light"></div>
+                    </div>
+                    <div class="heat-row">
+                        <span class="doctor-name">Rao</span>
+                        <div class="cell light"></div>
+                        <div class="cell mid"></div>
+                        <div class="cell darkest"></div>
+                        <div class="cell darkest"></div>
+                        <div class="cell dark"></div>
+                        <div class="cell mid"></div>
+                    </div>
+                    <div class="heat-row">
+                        <span class="doctor-name">Shah</span>
+                        <div class="cell light"></div>
+                        <div class="cell light"></div>
+                        <div class="cell mid"></div>
+                        <div class="cell mid"></div>
+                        <div class="cell light"></div>
+                        <div class="cell light"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donut-card">
+                <!-- DONUT CHART SPACE (120 x 120). Waiting for your decision: image or conic-gradient -->
+                <div class="donut-space"></div>
+
+                <div class="legend">
+                    <span class="legend-item">Walk-ins 45%</span>
+                    <span class="legend-item">Emergency 30%</span>
+                    <span class="legend-item">Other 25%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BOTTOM: peak periods + no-shows ===== -->
+        <section class="bottom">
+
+            <div class="peak-card">
+                <span class="card-title">Peak and quiet periods</span>
+                <div class="pills">
+                    <span class="pill pill-peak">Peak 11-12 · 42 min</span>
+                    <span class="pill pill-quiet">Quiet 2-3 pm · 9 min</span>
+                </div>
+                <span class="best-time">Best time to visit: after 2 pm</span>
+            </div>
+
+            <div class="noshow-card">
+                <span class="card-title">No-shows and step-outs</span>
+                <div class="bar-rows">
+                    <div class="bar-row">
+                        <span class="bar-label">No-shows</span>
+                        <div class="bar bar-red"></div>
+                        <span class="bar-value">4</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="bar-label">Step-outs</span>
+                        <div class="bar bar-green"></div>
+                        <span class="bar-value">11</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
