@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CalmWait - Why the delay?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="delay.css">
+</head>
+<body>
+  <div class="page">
+    <div class="overlay">
+
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="brand">
+            <div class="logo">C</div>
+            <span class="brand-name">CalmWait</span>
+            <span class="tag">Live Patient App</span>
+          </div>
+          <div class="clinic">
+            <span class="clinic-name">CityCare Clinic</span>
+            <span class="clinic-info">• General Medicine •</span>
+            <span class="tag">Room 4</span>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <span class="sync"><span class="dot"></span> Queue Syncing Live</span>
+          <span class="lang">EN ⌄</span>
+          <span class="help-btn">📞 Quick Help</span>
+        </div>
+      </header>
+
+      <nav class="steps">
+        <div class="steps-left">
+          <span class="step">Arrival &amp; Check-in</span>
+          <span class="step">Vitals Collected</span>
+          <span class="step step-active">Step 3: Why Delay &amp; Queue Status</span>
+          <span class="step">Doctor Consultation</span>
+        </div>
+        <span class="updated">Last updated: <b>11:22 AM</b> (10s ago)</span>
+      </nav>
+
+      <main class="content">
+
+        <section class="hero">
+          <span class="hero-pill">❤️ It is okay to ask why. Here is the honest answer.</span>
+          <h1>Why the delay?</h1>
+          <p class="hero-sub">Priority cases are explained, not hidden.</p>
+        </section>
+
+        <div class="columns">
+
+          <!-- LEFT COLUMN -->
+          <div class="column">
+
+            <section class="card card-peach">
+              <div class="row">
+                <span class="label-active">ACTIVE CLINICAL UPDATE</span>
+                <span class="small-gray">11:15 AM Log</span>
+              </div>
+              <h2 class="peach-title">Dr. Mehta is seeing an emergency case.</h2>
+              <p class="peach-text">A patient required urgent triage assessment. Everyone may wait about 15 minutes more. Medical details stay completely private.</p>
+
+              <div class="info-box">
+                <div class="row"><span>Attending Physician:</span><b>Dr. Sanjeev Mehta</b></div>
+                <div class="row"><span>Clinical Urgency:</span><b class="red">Level 2 (Semi-Urgent)</b></div>
+              </div>
+
+              <div class="progress-block">
+                <div class="row"><b class="red">Triage Resolution</b><b class="red">~75% completed</b></div>
+                <div class="bar"><div class="bar-fill"></div></div>
+                <div class="row"><span class="small-gray">Est. consultation resumption:</span><b>11:35 AM</b></div>
+              </div>
+            </section>
+
+            <section class="card lounge">
+              <div class="row">
+                <span class="card-label">WAITING LOUNGE COMFORTS</span>
+                <span class="chip">Floor 1 Amenities</span>
+              </div>
+              <div class="amenity-row">
+                <div class="amenity">💧 Water Dispenser</div>
+                <div class="amenity">📶 Wi-Fi: CityCare</div>
+              </div>
+              <div class="amenity-row">
+                <div class="amenity">🍵 Herbal Tea Bar</div>
+                <div class="amenity">🔌 Row B Chargers</div>
+              </div>
+              <div class="row lounge-bottom">
+                <span class="small-text"><span class="dot"></span> Quiet zone at Bay C</span>
+                <span class="small-text">View Lounge Map →</span>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- MIDDLE COLUMN -->
+          <div class="column">
+
+            <section class="card">
+              <div class="row">
+                <span class="card-label">RECENT SKIPS &amp; PRIORITIZATIONS</span>
+                <span class="chip">Audited &amp; Verified</span>
+              </div>
+              <div class="skip">
+                <div><div class="token-name">A-27</div><div class="small-gray">Severity assessment</div></div>
+                <span class="badge badge-red">Emergency</span>
+              </div>
+              <div class="skip">
+                <div><div class="token-name">A-26</div><div class="small-gray">Specialist follow-up</div></div>
+                <span class="badge badge-green">Pre-booked 10:30</span>
+              </div>
+              <div class="skip skip-last">
+                <div><div class="token-name">A-22</div><div class="small-gray">Grace window valid</div></div>
+                <span class="badge badge-gray">Returned from step-out</span>
+              </div>
+              <p class="note">Tokens are dynamically re-sequenced by clinical protocol. Your queue priority is strictly preserved.</p>
+            </section>
+
+            <section class="card">
+              <div class="row">
+                <span class="card-label">QUEUE ORDER AFTER EMERGENCY</span>
+                <span class="chip chip-solid">Next In Line</span>
+              </div>
+
+              <div class="queue-item queue-you">
+                <div class="queue-left">
+                  <span class="num num-green">1</span>
+                  <div><div class="queue-name">A-24 (You)</div><div class="small-text">Consultation ~15 min</div></div>
+                </div>
+                <span class="est-white">Est. 11:35 AM</span>
+              </div>
+              <div class="queue-item">
+                <div class="queue-left">
+                  <span class="num">2</span>
+                  <div><div class="queue-name">A-25</div><div class="small-gray">General Review</div></div>
+                </div>
+                <span class="est">Est. 11:50 AM</span>
+              </div>
+              <div class="queue-item">
+                <div class="queue-left">
+                  <span class="num">3</span>
+                  <div><div class="queue-name">A-28</div><div class="small-gray">Routine Follow-up</div></div>
+                </div>
+                <span class="est">Est. 12:05 PM</span>
+              </div>
+
+              <div class="row queue-bottom">
+                <span class="sync-text">Sync frequency: every 30s</span>
+                <span class="sync-text">Room 4 Active</span>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="column">
+
+            <section class="token-card">
+              <div class="circle"></div>
+              <div class="row">
+                <span class="token-label">YOUR VISIT TOKEN</span>
+                <span class="pill-dark">● confirmed</span>
+              </div>
+              <div class="row token-middle">
+                <span class="token-number">A-24</span>
+                <span class="pill-dark">General Med</span>
+              </div>
+              <p class="token-doctor">Dr. Mehta · Room 4</p>
+              <div class="token-bottom">
+                <span class="pill-light">25 min free</span>
+                <span class="pill-mid">Back 11:40</span>
+                <span class="token-hold">Hold reserved</span>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="row">
+                <h2 class="help-title">Need Reception Help?</h2>
+                <span class="info-i">i</span>
+              </div>
+              <p class="help-text">Desk 2 is ready to assist. Present token <b>A-24</b> or request assistance below.</p>
+              <div class="btn-outline">📞 Call Reception Desk</div>
+              <div class="btn-gray">Request Wheelchair / Assistance</div>
+              <div class="row help-bottom">
+                <span class="small-text"><span class="dot"></span> Lounge Noise: Calm (42 dB)</span>
+                <span class="small-gray">Desk 2 Active</span>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="row">
+                <span class="card-label">FREQUENTLY ASKED</span>
+                <span class="small-gray">Quick FAQs</span>
+              </div>
+              <div class="faq">
+                <b>Can I step outside?</b>
+                <p>Yes, you have a <b>25 min grace window</b>. Simply return by 11:40 AM.</p>
+              </div>
+              <div class="faq">
+                <b>If the emergency runs longer?</b>
+                <p>Your free step-out duration automatically extends with clinic delays.</p>
+              </div>
+              <div class="row faq-bottom">
+                <span class="small-gray">SMS reminder enabled</span>
+                <b class="green">Need help? →</b>
+              </div>
+            </section>
+
+          </div>
+        </div>
+
+        <section class="banner">
+          <div class="banner-left">
+            <span class="shield">🛡️</span>
+            <div>
+              <div class="banner-title">Your place A-24 is safe.</div>
+              <div class="banner-text">Guaranteed slot retention active. The system will alert your phone via SMS 3 minutes before your room call.</div>
+            </div>
+          </div>
+          <div class="banner-right">
+            <span class="banner-ask">Need to step out?</span>
+            <span class="banner-btn">Activate 25-Min Step-Out</span>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <span>CalmWait™ Transparency System • Patient Privacy Regulations</span>
+        <span>Privacy Guidelines &nbsp; • &nbsp; Clinic Policies &nbsp; • &nbsp; Accessibility Support</span>
+
+    </div>
+  </div>
+</body>
+</html>

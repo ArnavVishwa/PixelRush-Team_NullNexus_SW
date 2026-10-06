@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalmWait - Emergency Doctor Change</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <div class="logo-box">+</div>
+                <span class="logo-name">CalmWait</span>
+            </div>
+            <div class="clinic-info">
+                <span class="clinic-name">CityCare Clinic</span>
+                <span class="clinic-sub">General Medicine • Room-4</span>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="#" class="nav-link">Check-in</a>
+            <a href="#" class="nav-link">Live Queue</a>
+            <a href="#" class="nav-link">Why Delay</a>
+            <a href="#" class="nav-link nav-dim">Step Out</a>
+            <a href="#" class="nav-link">Alerts</a>
+            <a href="#" class="nav-link">Progress</a>
+            <a href="#" class="nav-link">Analytics</a>
+            <a href="#" class="emergency-button">Emergency</a>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- ===== ALERT BANNER ===== -->
+        <section class="alert-banner">
+            <div class="alert-left">
+                <div class="alert-badge">
+                    <!-- PASTE IMAGE HERE: warning icon -->
+                    <span class="icon">⚠️</span>
+                    <span>EMERGENCY MEDICAL ALERT</span>
+                </div>
+                <div class="alert-text">
+                    <span class="alert-title">Your doctor is handling another emergency.</span>
+                    <span class="alert-sub">Your consultation has been transferred to Dr. Sharma.</span>
+                </div>
+            </div>
+
+            <div class="alert-pills">
+                <div class="status-pill">
+                    <!-- PASTE IMAGE HERE: shield-check icon -->
+                    <span class="icon">🛡️</span>
+                    <span>✓ Priority Protected</span>
+                </div>
+                <div class="status-pill">
+                    <!-- PASTE IMAGE HERE: user-check icon -->
+                    <span class="icon">👤</span>
+                    <span>✓ New Doctor Assigned</span>
+                </div>
+                <div class="status-pill">
+                    <!-- PASTE IMAGE HERE: lock icon -->
+                    <span class="icon">🔒</span>
+                    <span>✓ Spot Locked</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TITLE ===== -->
+        <section class="page-title">
+            <h1 class="title">Your doctor has changed for this consultation</h1>
+            <div class="title-row">
+                <p class="subtitle">Dr. Sharma has taken over your consultation.</p>
+                <div class="status-pill">
+                    <span class="dot dot-green"></span>
+                    <span>✓ Care Continuing</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROGRESS STEPPER ===== -->
+        <section class="stepper">
+            <div class="step-item">
+                <span class="check-circle">✓</span>
+                <span>Emergency Identified</span>
+            </div>
+
+            <div class="step-sep"></div>
+
+            <div class="step-item">
+                <span class="check-circle">✓</span>
+                <span>Doctor Assigned</span>
+            </div>
+
+            <div class="step-sep"></div>
+
+            <div class="step-item step-active">
+                <span class="dot dot-teal"></span>
+                <span>Preparing Consultation</span>
+                <span class="active-tag">Active</span>
+            </div>
+
+            <div class="step-sep"></div>
+
+            <div class="step-item step-future">
+                <span class="ring"></span>
+                <span>Consultation (Room 4)</span>
+            </div>
+        </section>
+
+        <!-- ===== TWO COLUMNS ===== -->
+        <section class="columns">
+
+            <!-- ---------- LEFT COLUMN ---------- -->
+            <div class="left-col">
+
+                <!-- Doctor handoff -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-label">DOCTOR HANDOFF</span>
+                        <span class="tag-green">Live Transfer In Progress</span>
+                    </div>
+
+                    <div class="doctor-row">
+                        <div class="doctor-card doctor-current">
+                            <span class="doctor-label">CURRENT DOCTOR</span>
+                            <span class="doctor-name">Dr. Mehta</span>
+                            <span class="doctor-status status-red">
+                                <span class="dot dot-red"></span>
+                                <span>Unavailable</span>
+                            </span>
+                        </div>
+
+                        <div class="swap-circle">⇄</div>
+
+                        <div class="doctor-card doctor-new">
+                            <span class="doctor-label label-dark">NEW DOCTOR</span>
+                            <span class="doctor-name">Dr. Sharma</span>
+                            <span class="doctor-status status-green">
+                                <span class="dot dot-green"></span>
+                                <span>Assigned • Room 4</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- MISSING ASSET: handoff illustration (3 small cards with dotted lines). Waiting for your decision -->
+                    <div class="handoff-illustration"></div>
+
+                    <div class="sync-bar">
+                        <!-- PASTE IMAGE HERE: check-circle icon -->
+                        <span class="icon">✅</span>
+                        <span>✓ Intake vitals and clinical history synchronized</span>
+                    </div>
+                </div>
+
+                <!-- What to do now -->
+                <div class="card">
+                    <div class="card-header card-header-line">
+                        <span class="card-label">WHAT TO DO NOW</span>
+                    </div>
+
+                    <div class="todo-row">
+                        <div class="todo-box">
+                            <!-- PASTE IMAGE HERE: desk/lounge icon -->
+                            <span class="icon">🪑</span>
+                            <span class="todo-title">1. Stay available</span>
+                            <span class="todo-sub">Desk / Lounge area</span>
+                        </div>
+                        <div class="todo-box">
+                            <!-- PASTE IMAGE HERE: charts/clipboard icon -->
+                            <span class="icon">📋</span>
+                            <span class="todo-title">2. Dr. Sharma is preparing</span>
+                            <span class="todo-sub">Reviewing Room 4 charts</span>
+                        </div>
+                        <div class="todo-box">
+                            <!-- PASTE IMAGE HERE: bell icon -->
+                            <span class="icon">🔔</span>
+                            <span class="todo-title">3. You'll be called shortly</span>
+                            <span class="todo-sub">Auditory chime &amp; SMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Care continuation guarantee -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-label">CARE CONTINUATION GUARANTEE</span>
+                        <span class="tag-green">Token A-24 Locked</span>
+                    </div>
+
+                    <div class="guarantee-wrap">
+                        <!-- MISSING ASSET: guarantee illustration (shield + token card). Waiting for your decision -->
+                        <div class="guarantee-illustration"></div>
+                    </div>
+
+                    <div class="guarantee-row">
+                        <div class="guarantee-item">
+                            <span class="check-circle">✓</span>
+                            <span class="guarantee-text">Priority protected</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <span class="check-circle">✓</span>
+                            <span class="guarantee-text guarantee-narrow">Dr. Sharma ready in Room 4</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <span class="check-circle">✓</span>
+                            <span class="guarantee-text">No re-registration required</span>
+                        </div>
+                    </div>
+
+                    <div class="guarantee-actions">
+                        <div class="action-buttons">
+                            <a href="#" class="confirm-button">Confirm Handoff →</a>
+                            <a href="#" class="contact-button">
+                                <!-- PASTE IMAGE HERE: headset icon -->
+                                <span class="icon">🎧</span>
+                                <span>Contact Desk / Nurse</span>
+                            </a>
+                        </div>
+
+                        <div class="help-group">
+                            <span class="help-text">Need immediate help?</span>
+                            <a href="#" class="call-desk-button">
+                                <!-- PASTE IMAGE HERE: emergency light icon -->
+                                <span class="icon">🚨</span>
+                                <span class="call-desk-text">Call Emergency Desk</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------- RIGHT COLUMN ---------- -->
+            <div class="right-col">
+
+                <!-- Priority visit -->
+                <div class="priority-card">
+                    <div class="priority-header">
+                        <span class="card-label">YOUR PRIORITY VISIT</span>
+                        <span class="tag-red">Emergency Priority</span>
+                    </div>
+
+                    <div class="token-top">
+                        <span class="small-label">PATIENT TOKEN</span>
+                        <span class="gray-tag">Station 4 Fast Track</span>
+                    </div>
+                    <div class="token-big">A-24</div>
+
+                    <div class="wait-box">
+                        <div class="wait-top">
+                            <span class="wait-label">EXPECTED WAIT</span>
+                            <span class="tag-mint">Immediate Next</span>
+                        </div>
+                        <div class="wait-big">UNDER 5 MIN</div>
+                        <div class="bar-track">
+                            <div class="bar-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="consult-row">
+                        <span class="consult-label">Consult Room:</span>
+                        <span class="consult-value">Room 4 (Station 4 Lead)</span>
+                    </div>
+
+                    <div class="protected-bar">
+                        <!-- PASTE IMAGE HERE: shield icon -->
+                        <span class="icon">🛡️</span>
+                        <span>✓ Priority Protected · Spot Locked</span>
+                    </div>
+                </div>
+
+                <!-- Emergency bed -->
+                <div class="bed-card">
+                    <div class="bed-top">
+                        <div class="bed-title">
+                            <!-- PASTE IMAGE HERE: bed icon -->
+                            <span class="icon">🛏️</span>
+                            <span>EMERGENCY BED</span>
+                        </div>
+                        <div class="bed-status">
+                            <span class="dot dot-orange"></span>
+                            <span>BED STATUS:</span>
+                            <span class="dot dot-brown"></span>
+                            <span>Limited availability</span>
+                        </div>
+                    </div>
+
+                    <h2 class="bed-heading">Need a bed for urgent care?</h2>
+                    <p class="bed-text">Request a bed for immediate emergency care. Patient or family member can request.</p>
+
+                    <div class="bed-illustration">
+                        <img class="bed-image" src="Container.png" alt="Emergency bed illustration">
+                    </div>
+
+                    <a href="#" class="bed-button">
+                        <!-- PASTE IMAGE HERE: bed icon -->
+                        <span class="icon">🛏️</span>
+                        <span>Request Emergency Bed →</span>
+                    </a>
+                    <a href="#" class="bed-link">Learn about emergency bed availability</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-left">
+            <b class="footer-bold">CalmWait™ Healthcare Flow Engine</b>
+            <span>•</span>
+            <span>Privacy</span>
+            <span>•</span>
+            <span>Accessibility</span>
+            <span>•</span>
+            <span>Patient Support</span>
+            <span>•</span>
+            <span>Contact Reception</span>
+        </div>
+        <div class="footer-right">
+            <!-- PASTE IMAGE HERE: shield icon -->
+            <span class="icon">🛡️</span>
+            <span>Secure Patient Experience • HIPAA Compliant Session</span>
+        </div>
+    </footer>
+
+</body>
+</html>
