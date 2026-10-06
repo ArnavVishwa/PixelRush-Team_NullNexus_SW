@@ -3,321 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <title>CalmWait - Step Out</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="step-out.css">
 </head>
-
 <body>
 
-    <nav class="navbar">
-
-        <div class="brand">
-            <div class="brand-icon">◉</div>
-
-            <div>
-                <h3>CalmWait</h3>
-                <p>CityCare Clinic</p>
-                <span>General Medicine • Room 4</span>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <div class="logo-box">+</div>
+                <span class="logo-name">CalmWait</span>
+            </div>
+            <div class="clinic-info">
+                <span class="clinic-name">CityCare Clinic</span>
+                <span class="clinic-sub">General Medicine • Room-4</span>
             </div>
         </div>
 
-        <div class="nav-links">
-            <a href="#">Check-in</a>
-            <a href="#">Live Queue</a>
-            <a href="#">Why Delay</a>
-            <a href="#" class="active">Step Out</a>
-            <a href="#">Alerts</a>
-            <a href="#">Progress</a>
-            <a href="#">Emergency</a>
+        <nav class="nav">
+            <a href="#" class="nav-link">Check-in</a>
+            <a href="#" class="nav-link">Live Queue</a>
+            <a href="#" class="nav-link">Why Delay</a>
+            <a href="#" class="nav-link nav-active">Step Out</a>
+            <a href="#" class="nav-link">Alerts</a>
+            <a href="#" class="nav-link">Progress</a>
+            <a href="#" class="nav-link">Analytics</a>
+            <a href="#" class="emergency-button">Emergency</a>
+        </nav>
+    </header>
+
+    <!-- ================= BREADCRUMB STRIP ================= -->
+    <section class="breadcrumb">
+        <div class="breadcrumb-left">
+            <span class="crumb-main">CityCare Clinic</span>
+            <span class="crumb-dot">•</span>
+            <span class="crumb-sub">General Medicine</span>
         </div>
-
-    </nav>
-
-
-    <div class="clinic-bar">
-
-        <div>
-            <b>CityCare Clinic</b>
-            <span>•</span>
-            General Medicine
+        <div class="live-pill">
+            <span class="live-dot"></span>
+            <span>LIVE · Safe Step-Out Active · Estimated wait <b>25 min</b></span>
         </div>
+    </section>
 
-        <div class="live">
-            ● LIVE · Safe Step-Out Active · Estimated wait 25 min
-        </div>
+    <main class="main">
 
-    </div>
+        <!-- ===== ROW A: heading + toggle ===== -->
+        <section class="intro">
+            <div class="intro-left">
+                <div class="breath-pill">
+                    <!-- PASTE IMAGE HERE: heart icon -->
+                    <span class="icon">❤️</span>
+                    <span>Take a breath. Your spot is held safely.</span>
+                </div>
+                <h1 class="title">You can step out for a while.</h1>
+                <p class="subtitle">Your place is protected while you step out.</p>
+            </div>
 
+            <div class="intro-right">
+                <div class="toggle">
+                    <span class="toggle-active">Booked 10:30</span>
+                    <span class="toggle-off">Walk-in</span>
+                </div>
+                <!-- PASTE IMAGE HERE: rupee icon button (text ₹ used for now) -->
+                <div class="round-button">₹</div>
+                <div class="round-button">Aa</div>
+            </div>
+        </section>
 
-    <main>
-
-        <div class="warning">
-            ⚠ Take a break — your spot is held safely.
-        </div>
-
-        <h1>You can step out for a while.</h1>
-
-        <p class="sub-heading">
-            Your place is protected while you step out.
-        </p>
-
-
-        <div class="main-row">
+        <!-- ===== ROW B: big card + right column ===== -->
+        <section class="hero">
 
             <div class="return-card">
-
                 <div class="return-top">
-
-                    <div>
-                        <p>SAFE RETURN WINDOW</p>
-                        <h2>25 MIN FREE</h2>
-                        <span>◷ 24 min 11 sec remaining</span>
-                    </div>
-
-                    <div class="stable">
-                        ● Queue stable
-                    </div>
-
-                </div>
-
-
-                <div class="time-row">
-
-                    <div>
-                        <small>RETURN BY</small>
-                        <strong>11:40 AM</strong>
-                    </div>
-
-                    <div class="line"></div>
-
-                    <div>
-                        <small>NEXT CHECK</small>
-                        <strong>11:30 AM</strong>
-                    </div>
-
-                </div>
-
-
-                <div class="return-bottom">
-
-                    <button>
-                        I am stepping out →
-                    </button>
-
-                    <span>
-                        Notify me at 11:30 🔔
+                    <span class="return-label">SAFE RETURN WINDOW</span>
+                    <span class="stable-badge">
+                        <span class="stable-dot"></span>
+                        Queue stable
                     </span>
-
                 </div>
 
+                <div class="return-time">
+                    <h2 class="big-time">25 MIN FREE</h2>
+                    <div class="remaining">
+                        <!-- PASTE IMAGE HERE: clock icon -->
+                        <span class="icon">🕒</span>
+                        <span>24 min 11 sec remaining</span>
+                    </div>
+                </div>
+
+                <div class="return-box">
+                    <div class="return-box-left">
+                        <span class="box-label">RETURN BY</span>
+                        <span class="box-time">11:40 AM</span>
+                    </div>
+                    <div class="box-divider"></div>
+                    <div class="return-box-right">
+                        <span class="box-label">NEXT CHECK</span>
+                        <span class="box-time">11:30 AM</span>
+                    </div>
+                </div>
+
+                <div class="return-actions">
+                    <a href="#" class="step-button">I am stepping out →</a>
+                    <div class="notify">
+                        <span>Notify me at 11:30</span>
+                        <!-- PASTE IMAGE HERE: bell icon -->
+                        <span class="icon">🔔</span>
+                    </div>
+                </div>
             </div>
 
-
-            <div class="right-side">
-
-                <div class="top-buttons">
-                    <button class="back">Back to 10:30</button>
-                    <button>Walk-in</button>
-                    <button>◉</button>
-                    <button>Aa</button>
-                </div>
-
-
-                <div class="empty-area"></div>
-
+            <div class="hero-right">
+                <img class="illustration" src="/step-out images/CalmWait_Patient_Return_Illustration.png" alt="Patient returning illustration">
 
                 <div class="token-card">
-
-                    <div class="token">
-                        <small>TOKEN</small>
-                        <b>A-24</b>
+                    <div class="token-box">
+                        <span class="token-small">TOKEN</span>
+                        <span class="token-number">A–24</span>
                     </div>
 
-                    <div class="doctor">
-                        <p>Dr. Mehta · Room 4</p>
-                        <span>● POSITION</span>
-                        <b>PROTECTED</b>
+                    <div class="token-middle">
+                        <span class="doctor">Dr. Mehta · Room 4</span>
+                        <div class="protected">
+                            <!-- PASTE IMAGE HERE: shield icon -->
+                            <span class="icon">🛡️</span>
+                            <div class="protected-text">
+                                <span>POSITION</span>
+                                <span>PROTECTED</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="target">
-                        <small>TARGET</small>
-                        <p>BACK BY</p>
-                        <b>11:40</b>
+                    <div class="token-target">
+                        <span class="token-small">TARGET</span>
+                        <span class="target-big">BACK BY</span>
+                        <span class="target-big">11:40</span>
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ===== ROW C: three cards ===== -->
+        <section class="info-row">
+
+            <!-- Live queue -->
+            <div class="info-card">
+                <div class="card-head">
+                    <div class="card-title">
+                        <!-- PASTE IMAGE HERE: list icon -->
+                        <span class="icon">📋</span>
+                        <span>LIVE QUEUE</span>
+                    </div>
+                    <span class="card-note">Live feed</span>
                 </div>
 
+                <div class="queue-body">
+                    <span class="queue-big">3 people ahead</span>
+                    <span class="queue-green">Queue stable · You: A-24</span>
+                </div>
+
+                <div class="queue-boxes">
+                    <div class="queue-box queue-done">
+                        <span class="queue-small">DONE</span>
+                        <span class="queue-token">A-22</span>
+                    </div>
+                    <div class="queue-box queue-consult">
+                        <span class="queue-small">IN CONSULT</span>
+                        <span class="queue-token">A-23</span>
+                    </div>
+                    <div class="queue-box queue-you">
+                        <span class="queue-small">YOU (NEXT)</span>
+                        <span class="queue-token">A-24</span>
+                    </div>
+                </div>
             </div>
 
-        </div>
-
-
-        <div class="cards">
-
-
-            <div class="card">
-
+            <!-- Confidence -->
+            <div class="info-card">
                 <div class="card-head">
-                    <b>☷ LIVE QUEUE</b>
-                    <span>Live feed</span>
+                    <div class="card-title">
+                        <!-- PASTE IMAGE HERE: gauge icon -->
+                        <span class="icon">⏱️</span>
+                        <span>CONFIDENCE &amp; CHANGES</span>
+                    </div>
                 </div>
 
-                <h3>3 people ahead</h3>
-
-                <p class="green">
-                    Queue stable · You: A-24
-                </p>
-
-                <div class="queue">
-
-                    <div>
-                        <small>DONE</small>
-                        <b>A-22</b>
+                <div class="confidence-body">
+                    <span class="confidence-big">92% HIGH CONFIDENCE</span>
+                    <div class="confidence-line">
+                        <b>Likely: 35 min</b>
+                        <span class="gray">Range: 30–45 min</span>
                     </div>
-
-                    <div class="consult">
-                        <small>IN CONSULT</small>
-                        <b>A-23</b>
-                    </div>
-
-                    <div class="next">
-                        <small>YOU (NEXT)</small>
-                        <b>A-24</b>
-                    </div>
-
                 </div>
 
+                <div class="pace-list">
+                    <div class="pace-row">
+                        <span>FAST PACE</span>
+                        <span>11:30 AM</span>
+                    </div>
+                    <div class="pace-row pace-current">
+                        <span>CURRENT ESTIMATE</span>
+                        <span>11:40 AM</span>
+                    </div>
+                    <div class="pace-row">
+                        <span>SLOW PACE</span>
+                        <span>11:50 AM</span>
+                    </div>
+                </div>
             </div>
 
-
-            <div class="card">
-
+            <!-- Alerts -->
+            <div class="info-card">
                 <div class="card-head">
-                    <b>◉ CONFIDENCE & CHANGES</b>
+                    <div class="card-title">
+                        <!-- PASTE IMAGE HERE: alert bell icon -->
+                        <span class="icon">🔔</span>
+                        <span>ALERTS ACTIVE</span>
+                    </div>
+                    <span class="active-badge">Active</span>
                 </div>
 
-                <h3 class="confidence">
-                    92% HIGH CONFIDENCE
-                </h3>
-
-                <p>
-                    Likely: <b>35 min</b>
-                    &nbsp; Range: 30–45 min
-                </p>
-
-                <div class="pace">
-
-                    <div>
-                        <small>FAST PACE</small>
-                        <b>11:30 AM</b>
-                    </div>
-
-                    <div class="estimate">
-                        <small>CURRENT ESTIMATE</small>
-                        <b>11:40 AM</b>
-                    </div>
-
-                    <div>
-                        <small>SLOW PACE</small>
-                        <b>11:50 AM</b>
-                    </div>
-
+                <div class="alert-list">
+                    <!-- PASTE IMAGE HERE: check icon (text ✓ used for now) -->
+                    <div class="alert-item"><span class="check">✓</span> SMS + Buzz alerts on</div>
+                    <div class="alert-item"><span class="check">✓</span> Return-time changes</div>
+                    <div class="alert-item"><span class="check">✓</span> Doctor ready</div>
+                    <div class="alert-item"><span class="check">✓</span> Vitals check</div>
                 </div>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="card-head">
-                    <b>♧ ALERTS ACTIVE</b>
-                    <span class="active">Active</span>
-                </div>
-
-                <p class="alert">✓ SMS + Buzz alerts on</p>
-                <p class="alert">✓ Return-time changes</p>
-                <p class="alert">✓ Doctor ready</p>
-                <p class="alert">✓ Vitals check</p>
 
                 <div class="alert-buttons">
-                    <button>↕ Call reception</button>
-                    <button class="late">⚠ I'm running late</button>
+                    <a href="#" class="call-button">
+                        <!-- PASTE IMAGE HERE: phone icon -->
+                        <span class="icon">📞</span>
+                        <span>Call reception</span>
+                    </a>
+                    <a href="#" class="late-button">
+                        <!-- PASTE IMAGE HERE: warning icon -->
+                        <span class="icon">⚠️</span>
+                        <span>I'm running late</span>
+                    </a>
                 </div>
-
             </div>
+        </section>
 
-        </div>
-
-
-        <div class="next-section">
-
-            <div class="next-head">
-                <b>⌁ WHAT HAPPENS NEXT · YOUR VISIT</b>
-                <span>Step 1 of 3 currently active</span>
+        <!-- ===== ROW D: what happens next ===== -->
+        <section class="next-card">
+            <div class="card-head">
+                <div class="card-title">
+                    <!-- PASTE IMAGE HERE: trend/line icon -->
+                    <span class="icon">📈</span>
+                    <span>WHAT HAPPENS NEXT · YOUR VISIT</span>
+                </div>
+                <span class="card-note">Step 1 of 3 currently active</span>
             </div>
-
 
             <div class="steps">
-
-                <div class="step active-step">
-
-                    <div class="number">1</div>
-
-                    <div>
-                        <b>1 · WAIT / RELAX</b>
-                        <p>Free to step out till 11:35</p>
+                <div class="step step-active">
+                    <div class="step-circle step-circle-active">1</div>
+                    <div class="step-text">
+                        <span class="step-title">1 · WAIT / RELAX</span>
+                        <span class="step-sub">Free to step out until 11:35</span>
                     </div>
-
                 </div>
 
-
-                <div class="arrow">›</div>
-
+                <span class="step-arrow">›</span>
 
                 <div class="step">
-
-                    <div class="number grey">2</div>
-
-                    <div>
-                        <b>2 · VITALS CHECK</b>
-                        <p>Back 2–3 min earlier</p>
+                    <div class="step-circle">2</div>
+                    <div class="step-text">
+                        <span class="step-title">2 · VITALS CHECK</span>
+                        <span class="step-sub">Desk 2 triage screen</span>
                     </div>
-
                 </div>
 
-
-                <div class="arrow">›</div>
-
+                <span class="step-arrow">›</span>
 
                 <div class="step">
-
-                    <div class="number grey">3</div>
-
-                    <div>
-                        <b>3 · DOCTOR CONSULT</b>
-                        <p>Dr. Mehta · Room 4</p>
+                    <div class="step-circle">3</div>
+                    <div class="step-text">
+                        <span class="step-title">3 · DOCTOR CONSULT</span>
+                        <span class="step-sub">Dr. Mehta in Room 4</span>
                     </div>
-
                 </div>
-
             </div>
-
-        </div>
-
+        </section>
     </main>
 
-
-    <footer>
-
-        <span>
-            CalmWait Queue Optimization System 2.0 · Patient Protection Enabled
-        </span>
-
-        <span>
-            Encrypted & HIPAA Compliant
-            &nbsp; • &nbsp;
-            CityCare Reception Direct Line
-        </span>
-
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <span>CalmWait Queue Optimization System 2.0 • Patient Protection Enabled</span>
+        <span>Encrypted &nbsp;&nbsp;•&nbsp;&nbsp; CityCare Reception Direct Link</span>
     </footer>
 
 </body>
