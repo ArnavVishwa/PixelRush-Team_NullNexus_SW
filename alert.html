@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmWait - Alerts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="alert.css">
+</head>
+<body>
+<div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="brand">
+            <img class="logo" src="images/logo.svg" alt="CalmWait logo">
+            <span class="brand-name">CalmWait</span>
+            <div class="clinic">
+                <span class="clinic-name">CityCare Clinic</span>
+                <span class="clinic-room">General Medicine • Room-4</span>
+            </div>
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="#">Check-in</a>
+            <a class="nav-link" href="#">Live Queue</a>
+            <a class="nav-link" href="#">Why Delay</a>
+            <a class="nav-link nav-bold" href="#">Step Out</a>
+            <a class="nav-link nav-active" href="#">Alerts</a>
+            <a class="nav-link" href="#">Progress</a>
+            <a class="nav-link nav-bold" href="#">Analytics</a>
+            <a class="nav-link nav-emergency" href="#">Emergency</a>
+        </nav>
+    </header>
+
+    <div class="reminder">
+        <span class="reminder-heart">♥</span>
+        <span>You are not forgetting anything. We will tell you.</span>
+    </div>
+
+    <main class="main">
+
+        <!-- TITLE AREA -->
+        <section class="title-area">
+            <div class="title-text">
+                <h1 class="page-title">Alerts</h1>
+                <p class="page-subtitle">Four kinds only: return now, return, delay, doctor update.</p>
+            </div>
+            <div class="badges">
+                <span class="badge badge-gray"><span class="dot dot-gray"></span><b>4 updates today</b> • Just now</span>
+                <span class="badge badge-red"><span class="dot dot-red"></span><b>1 action required</b></span>
+                <span class="badge badge-blue"><span class="dot dot-blue"></span>3 informational</span>
+                <span class="badge badge-pink">🎟️ <b>Token A-24</b></span>
+            </div>
+        </section>
+
+        <div class="columns">
+
+            <!-- LEFT COLUMN -->
+            <div class="left-column">
+
+                <div class="today-row">
+                    <div class="today-title">
+                        <h2 class="today-heading">Today</h2>
+                        <span class="new-tag">4 new</span>
+                    </div>
+                    <span class="filter-text">FILTERED BY PRIORITY ORDER</span>
+                </div>
+
+                <!-- Urgent card -->
+                <article class="alert-card card-urgent">
+                    <div class="card-top">
+                        <span class="tag tag-urgent">🔔 URGENT · ACTION REQUIRED</span>
+                        <span class="time time-red"><span class="dot dot-red"></span>Just now</span>
+                    </div>
+                    <h3 class="card-title card-title-big">Return now</h3>
+                    <p class="urgent-text">
+                        Your turn is near. <span class="highlight">Be back within 10 min.</span> Please return to waiting area Room 4. Tap to confirm arrival or rejoin queue safely.
+                    </p>
+                    <div class="urgent-actions">
+                        <div class="urgent-left">
+                            <a class="rejoin-button" href="#">Rejoin queue now →</a>
+                            <span class="held-box">🛡️ Your place A-24 is held safely</span>
+                        </div>
+                        <a class="notify-link" href="#">Notify arrival at door</a>
+                    </div>
+                </article>
+
+                <!-- Status card -->
+                <article class="alert-card card-status">
+                    <div class="card-top">
+                        <span class="tag tag-status">✓ STATUS · ALL CLEAR</span>
+                        <span class="time">11:20 AM</span>
+                    </div>
+                    <h3 class="card-title">All on track. Nothing has changed.</h3>
+                    <p class="card-text">
+                        Your estimated wait is holding steady at <span class="highlight-green">~25 min free time</span>. No urgent actions needed from you right now. Sit back or enjoy the courtyard.
+                    </p>
+                </article>
+
+                <!-- Doctor card -->
+                <article class="alert-card card-doctor">
+                    <div class="card-top">
+                        <span class="tag tag-doctor">🩺 DOCTOR UPDATE</span>
+                        <span class="time">11:15 AM</span>
+                    </div>
+                    <h3 class="card-title">Dr. Mehta is back and available</h3>
+                    <p class="card-text">
+                        Doctor returned from scheduled break. Consultation Room 4 has reopened and is currently proceeding with patient A-23.
+                    </p>
+                </article>
+
+                <!-- Queue card -->
+                <article class="alert-card card-queue">
+                    <div class="card-top">
+                        <span class="tag tag-queue">👥 QUEUE POSITION</span>
+                        <span class="time">10:50 AM</span>
+                    </div>
+                    <h3 class="card-title card-title-medium">You're getting closer · 3 people ahead</h3>
+                    <p class="card-text">
+                        Patient intake flow is moving as scheduled. Room 4 turn turnaround is averaging 8 minutes per consultation.
+                    </p>
+                </article>
+
+                <!-- Timeline -->
+                <section class="timeline-card">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">⏱ Timeline &amp; Event History</h3>
+                        <span class="auto-tag">Auto-logged</span>
+                    </div>
+                    <div class="timeline-list">
+                        <div class="event">
+                            <span class="event-dot dot-green"></span>
+                            <div class="event-text">
+                                <span class="event-title">Doctor back from break</span>
+                                <span class="event-desc">Scheduled midday pause concluded without backlog</span>
+                            </div>
+                            <span class="event-time">11:20 AM</span>
+                        </div>
+                        <div class="event">
+                            <span class="event-dot dot-orange"></span>
+                            <div class="event-text">
+                                <span class="event-title">Short delay: Emergency intake case</span>
+                                <span class="event-desc">Brief 15 min buffer added for acute triage support</span>
+                            </div>
+                            <span class="event-time">11:05 AM</span>
+                        </div>
+                        <div class="event">
+                            <span class="event-dot dot-green"></span>
+                            <div class="event-text">
+                                <span class="event-title">Near alert dispatched</span>
+                                <span class="event-desc">Approaching front: 3 people remaining ahead in queue</span>
+                            </div>
+                            <span class="event-time">10:50 AM</span>
+                        </div>
+                        <div class="event">
+                            <span class="event-dot dot-slate"></span>
+                            <div class="event-text">
+                                <span class="event-title">Checked in &amp; token assigned</span>
+                                <span class="event-desc">Registration confirmed at Desk 2 with Nurse Clara</span>
+                            </div>
+                            <span class="event-time">10:12 AM</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <aside class="right-column">
+
+                <!-- Visit card -->
+                <section class="visit-card">
+                    <div class="visit-top">
+                        <span class="visit-label">YOUR VISIT</span>
+                        <span class="active-turn"><span class="dot dot-green-light"></span>Active Turn</span>
+                    </div>
+                    <h2 class="visit-token">A-24</h2>
+                    <p class="visit-doctor">Dr. Mehta • Room 4</p>
+                    <p class="visit-dept">Internal Medicine &amp; General Consult</p>
+                    <div class="visit-line"></div>
+                    <div class="visit-stats">
+                        <div class="stat-box">
+                            <span class="stat-main">25 min free</span>
+                            <span class="stat-sub">Estimated buffer</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-main">Back by 11:40</span>
+                            <span class="stat-sub">Check-in cut-off</span>
+                        </div>
+                    </div>
+                    <div class="stepout-box">
+                        <p class="stepout-title">🛡️ Safe Step-Out Active</p>
+                        <p class="stepout-text">You can step to the café or garden. We will buzz your phone 10 minutes prior to call-in.</p>
+                        <a class="stepout-link" href="#">View Step-Out guidelines ›</a>
+                    </div>
+                </section>
+
+                <!-- Delivery channels -->
+                <section class="channels-card">
+                    <div class="channels-header">
+                        <h3 class="channels-title">Delivery Channels</h3>
+                        <span class="channels-count">3 Configured</span>
+                    </div>
+                    <div class="channel">
+                        <div class="channel-left">
+                            <span class="channel-icon">💬</span>
+                            <div class="channel-text">
+                                <span class="channel-name">SMS Alert</span>
+                                <span class="channel-desc channel-mono">+91 ••••• 829</span>
+                            </div>
+                        </div>
+                        <span class="status status-active">Active</span>
+                    </div>
+                    <div class="channel">
+                        <div class="channel-left">
+                            <span class="channel-icon">📳</span>
+                            <div class="channel-text">
+                                <span class="channel-name">Vibrate &amp; Push</span>
+                                <span class="channel-desc">Browser alerts enabled</span>
+                            </div>
+                        </div>
+                        <span class="status status-active">Active</span>
+                    </div>
+                    <div class="channel">
+                        <div class="channel-left">
+                            <span class="channel-icon">🔇</span>
+                            <div class="channel-text">
+                                <span class="channel-name">Loud Chime</span>
+                                <span class="channel-desc">Muted in silent area</span>
+                            </div>
+                        </div>
+                        <span class="status status-muted">Muted</span>
+                    </div>
+                </section>
+
+                <!-- Need help -->
+                <section class="help-card">
+                    <div class="help-top">
+                        <span class="help-icon">?</span>
+                        <div class="help-heading">
+                            <h3 class="help-title">Need help?</h3>
+                            <span class="help-live"><span class="dot dot-green-small"></span>Live human staff nearby</span>
+                        </div>
+                    </div>
+                    <p class="help-text">Desk 2 at central reception. Show your token <b>A-24</b> for fast wheelchair assist, medication timing questions, or translator services.</p>
+                    <a class="call-button" href="#">📞 Call reception (Ext. 402)</a>
+                    <p class="help-note">Available 24/7 • Average answer under 10 sec</p>
+                </section>
+
+                <img class="illustration" src="images/walking-patient_illustration.png" alt="Patient walking through a clinic">
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <span class="footer-left"><span class="dot dot-green-small"></span>Secure Patient Notification System • CalmWait v2.4</span>
+        <span>CityCare Clinic Emergency Helpdesk: +1 (800) 555-0199</span>
+    </footer>
+
+</div>
+</body>
+</html>
