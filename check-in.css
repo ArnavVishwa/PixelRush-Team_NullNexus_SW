@@ -1,0 +1,1028 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #F8FAFC;
+    color: #0F172A;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ===================================================
+   HEADER
+   =================================================== */
+
+.header {
+    height: 86px;
+    padding: 0 24px;
+    background-color: #004D40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.clinic {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    padding-left: 24px;
+    border-left: 1px solid #2A7567;
+}
+
+.clinic-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.clinic-details {
+    font-size: 14px;
+    color: #A7D7C9;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-link {
+    padding: 6px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #CFF1E6;
+    border-radius: 20px;
+}
+
+.nav-link-active {
+    background-color: #FFFFFF;
+    color: #004D40;
+}
+
+.nav-link-emergency {
+    margin-left: 4px;
+    padding: 9px 16px;
+    background-color: #E11D48;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+
+/* ===================================================
+   PAGE LAYOUT
+   =================================================== */
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 32px 125px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+
+/* ===================================================
+   BANNER
+   =================================================== */
+
+.banner {
+    height: 54px;
+    padding: 0 24px 0 22px;
+    background-color: #F0FDFA;
+    border: 1px solid #0F766E;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-message {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.banner-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #0D9F85;
+    border-radius: 6px;
+}
+
+.banner-text {
+    font-size: 17px;
+    color: #064E3B;
+}
+
+.banner-badge {
+    padding: 4px 12px;
+    background-color: #CCFBF1;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #0F766E;
+}
+
+
+/* ===================================================
+   WHITE CARDS (shared)
+   =================================================== */
+
+.card {
+    background-color: #FFFFFF;
+    border: 2px solid #004D40;
+    border-radius: 20px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0B1B33;
+}
+
+
+/* ===================================================
+   ROW 1 - CHECKED IN CARD
+   =================================================== */
+
+.checked-in-card {
+    width: 808px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.status-badge {
+    width: 276px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #ECFDF5;
+    border: 1px solid #A7F3D0;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #047857;
+}
+
+.checked-in-title {
+    margin-top: 16px;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #0B1B33;
+}
+
+.checked-in-text {
+    margin-top: 2px;
+    font-size: 19px;
+    line-height: 26px;
+    color: #64748B;
+    letter-spacing: -0.3px;
+}
+
+.illustration-box {
+    margin-top: 26px;
+    height: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4FBFA;
+    border: 1px solid #004D40;
+    border-radius: 20px;
+}
+
+.illustration {
+    width: 230px;
+    height: 230px;
+}
+
+.card-footer {
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: 1px solid #E8EEEC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-muted {
+    font-size: 15px;
+    line-height: 20px;
+    color: #64748B;
+}
+
+.footer-teal {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #0F766E;
+}
+
+
+/* ===================================================
+   ROW 1 - TOKEN CARD (dark green)
+   =================================================== */
+
+.token-card {
+    width: 568px;
+    padding: 34px;
+    background-color: #004D40;
+    border-radius: 24px;
+    box-shadow: 0 10px 24px #CFE3DE;
+    display: flex;
+    flex-direction: column;
+}
+
+.token-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #176659;
+}
+
+.token-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.token-label {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #5EEAD4;
+}
+
+.token-number {
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+
+.token-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: -2px;
+}
+
+.token-tag {
+    padding: 4px 12px;
+    background-color: #0B5F51;
+    border: 1px solid #1F8A79;
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #CCFBF1;
+}
+
+.token-booked {
+    font-size: 13px;
+    color: #5EEAD4;
+}
+
+.doctor {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.doctor-avatar {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B6657;
+    border: 1px solid #1E7F6F;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.doctor-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.doctor-details {
+    font-size: 15px;
+    color: #A7F3D0;
+}
+
+.stats {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.stat-box {
+    width: 244px;
+    height: 110px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background-color: #0A5546;
+    border: 1px solid #176659;
+    border-radius: 16px;
+}
+
+.stat-label {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #5EEAD4;
+}
+
+.stat-value {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.stat-note {
+    font-size: 13px;
+    line-height: 16px;
+    color: #A7F3D0;
+}
+
+.token-button {
+    margin-top: 84px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #14B8A6;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #004D40;
+}
+
+
+/* ===================================================
+   ROW 2 - WHAT HAPPENS NEXT
+   =================================================== */
+
+.next-card {
+    width: 808px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.card-heading-note {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #64748B;
+}
+
+.steps {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.step {
+    width: 236px;
+    height: 116px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F8FAFB;
+    border: 1px solid #E5ECEA;
+    border-radius: 14px;
+}
+
+.step-active {
+    padding: 14px;
+    background-color: #F0FDFA;
+    border: 2px solid #0F766E;
+}
+
+.step-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E8F0;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.step-number-active {
+    background-color: #0F766E;
+    color: #FFFFFF;
+}
+
+.step-dot {
+    width: 10px;
+    height: 10px;
+    margin-top: 7px;
+    background-color: #14B8A6;
+    border-radius: 5px;
+}
+
+.step-title {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1E293B;
+}
+
+.step-title-active {
+    color: #004D40;
+}
+
+.step-text {
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #64748B;
+}
+
+.step-text-active {
+    color: #0F766E;
+}
+
+.next-footer {
+    margin-top: 43px;
+    padding-top: 17px;
+}
+
+.small-muted {
+    font-size: 13px;
+    line-height: 16px;
+    color: #64748B;
+}
+
+.small-teal {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #047857;
+}
+
+
+/* ===================================================
+   ROW 2 - WHAT TO DO NOW
+   =================================================== */
+
+.todo-card {
+    width: 568px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-text {
+    margin-top: 7px;
+    font-size: 17px;
+    line-height: 26px;
+    color: #64748B;
+}
+
+.ready-box {
+    margin-top: 19px;
+    padding: 17px 16px 13px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: #F8FAFB;
+    border: 1px solid #E5ECEA;
+    border-radius: 14px;
+}
+
+.ready-title {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #475569;
+}
+
+.ready-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #334155;
+}
+
+.todo-footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-light {
+    font-size: 13px;
+    line-height: 16px;
+    color: #94A3B8;
+}
+
+.small-dark {
+    font-size: 13px;
+    line-height: 16px;
+    color: #334155;
+}
+
+
+/* ===================================================
+   ROW 3 - THREE SMALL CARDS
+   =================================================== */
+
+.small-card {
+    width: 448px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-card-title {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #475569;
+}
+
+/* Care team */
+.team-member {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.team-avatar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1FAE5;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #065F46;
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.team-name {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #0B1B33;
+}
+
+.team-role {
+    font-size: 13px;
+    line-height: 16px;
+    color: #64748B;
+}
+
+/* While you wait */
+.tiles {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tile-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.tile {
+    width: 192px;
+    height: 60px;
+    padding: 13px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #F8FAFB;
+    border: 1px solid #EEF2F1;
+    border-radius: 12px;
+}
+
+.tile-title {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #1E293B;
+}
+
+.tile-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #64748B;
+}
+
+.tile-code {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #0F766E;
+}
+
+.tile-green {
+    font-size: 12px;
+    line-height: 14px;
+    color: #059669;
+}
+
+/* Need assistance */
+.chips {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.chip {
+    padding: 6px 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px #E2E8F0;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+.assist-bottom {
+    margin-top: 49px;
+    padding-top: 12px;
+    border-top: 1px solid #E8EEEC;
+}
+
+.call-button {
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #004D40;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #004D40;
+}
+
+
+/* ===================================================
+   FOOTER
+   =================================================== */
+
+.footer {
+    padding: 26px 32px 20px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E5ECEA;
+    font-size: 13px;
+    line-height: 16px;
+    color: #64748B;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+
+/* ===================================================
+   TABLET  (screens up to 1100px wide)
+   Everything stacks into one column.
+   =================================================== */
+
+@media (max-width: 1100px) {
+
+    .header {
+        height: auto;
+        padding: 16px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    /* flex-wrap is needed here so the 8 menu links
+       can drop onto a second line on small screens */
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .page {
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .checked-in-card,
+    .token-card,
+    .next-card,
+    .todo-card,
+    .small-card {
+        width: 100%;
+    }
+
+    .status-badge {
+        width: 276px;
+    }
+
+    .stat-box {
+        width: 100%;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .tile {
+        width: 100%;
+    }
+
+    .illustration-box {
+        height: 260px;
+    }
+}
+
+
+/* ===================================================
+   MOBILE  (screens up to 600px wide)
+   =================================================== */
+
+@media (max-width: 600px) {
+
+    .page {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .row {
+        gap: 16px;
+    }
+
+    .header {
+        padding: 16px;
+    }
+
+    .brand {
+        flex-wrap: wrap;
+    }
+
+    .clinic {
+        margin-left: 0;
+        padding-left: 12px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .nav-link-emergency {
+        margin-left: 0;
+    }
+
+    .banner {
+        height: auto;
+        padding: 14px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .banner-message {
+        align-items: flex-start;
+    }
+
+    .banner-dot {
+        margin-top: 5px;
+    }
+
+    .checked-in-card,
+    .next-card,
+    .todo-card {
+        padding: 20px;
+    }
+
+    .token-card {
+        padding: 22px;
+    }
+
+    .small-card {
+        padding: 20px;
+    }
+
+    .status-badge {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .checked-in-title {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -1.5px;
+    }
+
+    .checked-in-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .illustration-box {
+        height: 200px;
+    }
+
+    .illustration {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .token-number {
+        font-size: 52px;
+        line-height: 58px;
+    }
+
+    .token-top {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .token-right {
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .token-button {
+        margin-top: 32px;
+        font-size: 16px;
+    }
+
+    .card-heading {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .next-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-top: 24px;
+    }
+
+    .todo-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .ready-item {
+        align-items: flex-start;
+        line-height: 22px;
+    }
+
+    .tile-row {
+        flex-direction: column;
+    }
+
+    .tile {
+        height: 60px;
+    }
+
+    .chips {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .assist-bottom {
+        margin-top: 24px;
+    }
+
+    .footer {
+        padding: 20px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

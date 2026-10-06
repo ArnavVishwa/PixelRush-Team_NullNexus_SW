@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmWait - Check-in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="check-in.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="brand">
+            <img class="brand-logo" src="images/logo.svg" alt="CalmWait logo">
+            <span class="brand-name">CalmWait</span>
+            <div class="clinic">
+                <span class="clinic-name">CityCare Clinic</span>
+                <span class="clinic-details">General Medicine • Room-4</span>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a class="nav-link nav-link-active" href="#">Check-in</a>
+            <a class="nav-link" href="#">Live Queue</a>
+            <a class="nav-link" href="#">Why Delay</a>
+            <a class="nav-link" href="#">Step Out</a>
+            <a class="nav-link" href="#">Alerts</a>
+            <a class="nav-link" href="#">Progress</a>
+            <a class="nav-link" href="#">Analytics</a>
+            <a class="nav-link nav-link-emergency" href="#">Emergency</a>
+        </nav>
+    </header>
+
+    <main class="page">
+
+        <!-- ================= BANNER ================= -->
+        <section class="banner">
+            <div class="banner-message">
+                <div class="banner-dot"></div>
+                <p class="banner-text">Take a deep breath, Rahul. You are in the right place, and your spot is strictly guaranteed.</p>
+            </div>
+            <span class="banner-badge">Slot Confirmed: 10:30 AM</span>
+        </section>
+
+        <!-- ================= ROW 1: CHECKED IN + TOKEN ================= -->
+        <div class="row">
+
+            <section class="card checked-in-card">
+                <div class="status-badge">
+                    <img src="images/circle-check.svg" alt="">
+                    <span>CHECKED IN • SPOT PROTECTED</span>
+                </div>
+                <h1 class="checked-in-title">You are checked in.</h1>
+                <p class="checked-in-text">Your place is secured. We'll let you know when it's time for your vitals.</p>
+
+                <div class="illustration-box">
+                    <img class="illustration" src="images/illustration.png" alt="Patient waiting with check-in confirmation">
+                </div>
+
+                <div class="card-footer">
+                    <span class="footer-muted">Digital check-in via QR code</span>
+                    <span class="footer-teal">Priority Pass Active</span>
+                </div>
+            </section>
+
+            <section class="token-card">
+                <div class="token-top">
+                    <div class="token-left">
+                        <span class="token-label">PATIENT QUEUE TOKEN</span>
+                        <span class="token-number">C–12</span>
+                    </div>
+                    <div class="token-right">
+                        <span class="token-tag">In Line • Spot Protected</span>
+                        <span class="token-booked">Booked slot: 10:30 AM</span>
+                    </div>
+                </div>
+
+                <div class="doctor">
+                    <div class="doctor-avatar">M</div>
+                    <div class="doctor-info">
+                        <span class="doctor-name">Dr. Mehta</span>
+                        <span class="doctor-details">General Medicine • Room 4</span>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <span class="stat-label">ESTIMATED TURN</span>
+                        <span class="stat-value">11:40 AM</span>
+                        <span class="stat-note">On Schedule</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">ESTIMATED WAIT</span>
+                        <span class="stat-value">25 MIN</span>
+                        <span class="stat-note">Free to step out</span>
+                    </div>
+                </div>
+
+                <a class="token-button" href="#">
+                    <span>Show My Free Window</span>
+                    <img src="images/arrow-3.svg" alt="">
+                </a>
+            </section>
+
+        </div>
+
+        <!-- ================= ROW 2: NEXT STEPS + TO DO ================= -->
+        <div class="row">
+
+            <section class="card next-card">
+                <div class="card-heading">
+                    <h2 class="card-title">What happens next</h2>
+                    <span class="card-heading-note">STEP-BY-STEP VISIT FLOW</span>
+                </div>
+
+                <div class="steps">
+                    <div class="step step-active">
+                        <div class="step-top">
+                            <span class="step-number step-number-active">1</span>
+                            <div class="step-dot"></div>
+                        </div>
+                        <span class="step-title step-title-active">WAIT</span>
+                        <span class="step-text step-text-active">You're in queue • ~25m</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-top">
+                            <span class="step-number">2</span>
+                        </div>
+                        <span class="step-title">VITALS</span>
+                        <span class="step-text">Desk 2 • Nurse Anjali</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-top">
+                            <span class="step-number">3</span>
+                        </div>
+                        <span class="step-title">CONSULT</span>
+                        <span class="step-text">Dr. Mehta • Room 4</span>
+                    </div>
+                </div>
+
+                <div class="card-footer next-footer">
+                    <span class="small-muted">We chime audio overhead &amp; send an SMS alert 3 mins before your turn</span>
+                    <span class="small-teal">Audio &amp; SMS alerts enabled</span>
+                </div>
+            </section>
+
+            <section class="card todo-card">
+                <h2 class="card-title">What to do now</h2>
+                <p class="todo-text">Relax in the waiting area. We will alert you immediately when it is time for your vitals check.</p>
+
+                <div class="ready-box">
+                    <span class="ready-title">BE READY FOR VITALS</span>
+                    <div class="ready-item">
+                        <img src="images/checkmark-3.svg" alt="">
+                        <span>Keep photo ID ready for verification</span>
+                    </div>
+                    <div class="ready-item">
+                        <img src="images/checkmark-3.svg" alt="">
+                        <span>Have your previous medication list on hand</span>
+                    </div>
+                </div>
+
+                <div class="todo-footer">
+                    <span class="small-light">Expected vitals time: ~3 mins</span>
+                    <span class="small-dark">Location: Station 2</span>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ================= ROW 3: THREE SMALL CARDS ================= -->
+        <div class="row">
+
+            <section class="card small-card">
+                <h2 class="small-card-title">YOUR CARE TEAM</h2>
+                <div class="team-member">
+                    <div class="team-avatar">SM</div>
+                    <div class="team-info">
+                        <span class="team-name">Dr. Sanjeev Mehta</span>
+                        <span class="team-role">Attending Physician • On schedule</span>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">AS</div>
+                    <div class="team-info">
+                        <span class="team-name">Nurse Anjali S.</span>
+                        <span class="team-role">Triage &amp; Vitals • Station 2 ready</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card small-card">
+                <h2 class="small-card-title">WHILE YOU WAIT</h2>
+                <div class="tiles">
+                    <div class="tile-row">
+                        <div class="tile">
+                            <span class="tile-title">Guest Wi-Fi</span>
+                            <span class="tile-code">care2024</span>
+                        </div>
+                        <div class="tile">
+                            <span class="tile-title">Water Station</span>
+                            <span class="tile-text">Corridor B</span>
+                        </div>
+                    </div>
+                    <div class="tile-row">
+                        <div class="tile">
+                            <span class="tile-title">Fast USB-C</span>
+                            <span class="tile-text">Rows 3 &amp; 4</span>
+                        </div>
+                        <div class="tile">
+                            <span class="tile-title">Calm Lounge</span>
+                            <span class="tile-green">38 dB (Quiet)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card small-card">
+                <h2 class="small-card-title">NEED ASSISTANCE?</h2>
+                <div class="chips">
+                    <span class="chip">Wheelchair</span>
+                    <span class="chip">Hearing Aid</span>
+                    <span class="chip">Escort Help</span>
+                </div>
+                <div class="assist-bottom">
+                    <a class="call-button" href="#">
+                        <img src="images/phone.svg" alt="">
+                        <span>Call Reception Desk</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <span class="footer-copy">© 2026 CityCare Health • CalmWait Queue Management Platform</span>
+        <div class="footer-links">
+            <span>Privacy Notice</span>
+            <span>Patient Rights</span>
+            <span>Language (English / हिन्दी)</span>
+        </div>
+    </footer>
+
+</body>
+</html>
