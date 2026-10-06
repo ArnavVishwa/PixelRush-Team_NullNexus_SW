@@ -482,3 +482,57 @@ body {
     font-weight: bold;
     color: #004D40;
 }
+
+
+@media screen and (max-width: 900px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+        border-radius: 32px 32px 0 0;
+        gap: 40px;
+    }
+
+    .right-panel {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 12px;
+    }
+
+    .left-panel {
+        padding: 32px 20px;
+    }
+
+    .right-panel {
+        padding: 32px 20px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .form-title {
+        font-size: 30px;
+    }
+
+    .form-subtitle {
+        font-size: 18px;
+    }
+
+    .strength-text {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .signin-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+}
