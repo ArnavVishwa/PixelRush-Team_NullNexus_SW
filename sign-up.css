@@ -423,6 +423,10 @@ body {
     border: 1px solid #DDE5EC;
     border-radius: 14px;
 }
+.qr-box img{
+    width: 130px;
+    height: 130px;
+}
 
 .qr-text {
     margin: 0;
